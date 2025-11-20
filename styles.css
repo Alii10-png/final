@@ -151,3 +151,111 @@ img.imgCen {
 	margin-left: auto;
 	display: block;
 }
+
+/* Style for the services table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+table th {
+    background-color: #f49ac2; /* Light pink for header */
+    color: white;
+}
+
+table td {
+    background-color: #f8f8f8; /* Light gray for rows */
+}
+
+/* Style for the form */
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't add extra width */
+}
+
+form textarea {
+    resize: vertical; /* Allow the user to resize the text area */
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #f49ac2; /* Pink color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #e14b7b; /* Darker pink for hover effect */
+}
+
+/* Style for the service selection dropdown */
+
+form select {
+    cursor: pointer;
+}
+
+/* Make the form look better on smaller screens */
+@media (max-width: 768px) {
+    #main, aside, nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    #main {
+        padding: 20px;
+        border-left: none;
+        border-right: none;
+    }
+
+    table, form {
+        width: 100%;
+    }
+
+    form label {
+        margin-bottom: 5px;
+    }
+
+    form input, form select, form textarea {
+        margin-bottom: 12px;
+    }
+}
+
+/* Video container styling */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}

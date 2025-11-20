@@ -23,7 +23,7 @@
 
 <header> 
 
-<a href="index.html"><img src="images/logo.png" alt="Pink lash by Ali logo"/></a>
+<a href="services.html"><img src="images/logo.png" alt="Pink lash by Ali logo"/></a>
 
 </header> 
 
@@ -40,23 +40,31 @@
 	 
 <article id = "main"> 
 
-<h2>About Pink Lash by Ali</h2>
-	<p>Welcome to Pink Lash By Ali, a beauty studio dedicated to enhancing your natural charm through precise lash artistry. 
-	Every set is customized to fit your unique feautures and lifestyle, ensuring a look that feels effortless yet unforgettable.
-	My passion is helping clients wake up feeling confident, beautiful, and ready to take on the day, with lashes that look perfect from morning to night.</p>
+<h3>Book an Appointment</h3>
+	<p>If you'd like to book an appointment, please fill out the form below and we'll get back to you as soon as possible.</p>
+		<form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-<img src = "images/tech.jpg" class="imgCen" alt = "Pink lash studio"  />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-<h3>Mission Statement</h3>
-	<p>At Pink Lash By Ali, I believe that beauty begins with self-care and confidence. 
-	Each appointment is built on three core values: precision, safety, and comfort.
-	Your eyes tell your story, my mission is to make that story unforgettable.</p>
-	
-	<img src = "images/team.jpg" class="imgCen" alt = "Pink lash studio"  />
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+              <option value="classic">Classic Set</option>
+              <option value="hybrid">Hybrid Set</option>
+              <option value="volume">Volume Set</option>
+            </select>
 
-<h3>Services</h3>
-	<p>Every lash set is designed to enhance your natural features with the right balance of volume, curl, and softness.</p>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
 
+            <label for="message">Special Requests:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Book Now</button>
+		</form>
+		
 </article> <!-- end main -->
 
 <aside> 
